@@ -13,8 +13,11 @@ Proyecto de entrenamiento con Q-learning en el entorno MountainCar-v0 de Gym. In
 
 ## 1. Crear y activar entorno virtual
 ```bash
+# Entrar a la caprte mountaincar
+cd mountaincar
+
 # Crear entorno virtual llamado 'venv_mountaincar'
-python -m venv venv_mountaincar
+py -3.10 -m venv venv_mountaincar 
 
 # Activar entorno en Windows
 venv_mountaincar\Scripts\activate
