@@ -7,7 +7,6 @@ venv_mountaincar/
 venv_blobgame/
 qtable_backups/
 
-
 # Archivos temporales y de entorno
 __pycache__/
 *.pyc

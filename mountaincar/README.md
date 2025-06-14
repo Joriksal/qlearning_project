@@ -4,7 +4,7 @@ Proyecto de entrenamiento con Q-learning en el entorno MountainCar-v0 de Gym. In
 
 ## Requisitos
 
-- Python 3.8+
+- Python 3.10
 - Gym
 - Numpy
 - Matplotlib
@@ -87,26 +87,24 @@ El agente:
 
 - Actualiza su conocimiento para mejorar la política.
 
-### ¿Qué es Q-learning?
+## ¿Cómo funciona Q-Learning?
+
 Q-learning es un algoritmo de aprendizaje por refuerzo basado en valores. El agente aprende una función Q que estima la utilidad de realizar una acción en un estado dado.
 
-La actualización de la tabla Q se realiza con la fórmula:
+**Actualización de la Q-table:**
 
-    *𝑄(𝑠,𝑎)←𝑄(𝑠,𝑎)+𝛼(𝑟+𝛾max⁡𝑎′𝑄(𝑠′,𝑎′)−𝑄(𝑠,𝑎))*
+$$
+Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]
+$$
 
-Donde:
+- $s$: estado actual
+- $a$: acción tomada
+- $r$: recompensa recibida
+- $s'$: nuevo estado
+- $\alpha$: tasa de aprendizaje
+- $\gamma$: factor de descuento
 
-    𝑠: estado actual
-
-    𝑎: acción tomada
-
-    𝑟: recompensa recibida
-
-    𝑠′: nuevo estado
-
-    𝛼: tasa de aprendizaje
-
-    𝛾: factor de descuento para recompensas futuras
+---
 
 ### Aplicación en MountainCar
 MountainCar es un entorno clásico donde un auto debe aprender a subir una colina. El estado es continuo (posición y velocidad). Se discretiza el espacio para aplicar Q-learning.
@@ -130,5 +128,6 @@ El agente aprende a elegir acciones (acelerar izquierda, derecha o sin acción) 
 - Incorporar métricas adicionales para analizar estabilidad y convergencia.
 
 ## 9. Créditos
-Desarrollado por Jose Ricardo Salas Castañon
-Estudiante de Ingeniería en Mecatrónica en especialidad en robotica en el Centro de Enseñanza Tecnica Industrial en Guadalajara, Jalisco
+- Desarrollado por Jose Ricardo Salas Castañon
+- Estudiante de Ingeniería en Mecatrónica, especialidad en Robótica
+- Centro de Enseñanza Técnica Industrial, Guadalajara, México
