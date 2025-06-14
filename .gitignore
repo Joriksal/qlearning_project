@@ -4,6 +4,9 @@ qtable_charts/
 qtables/
 videos/
 venv_mountaincar/
+venv_blobgame/
+qtable_backups/
+
 
 # Archivos temporales y de entorno
 __pycache__/
