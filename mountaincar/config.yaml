@@ -1,0 +1,11 @@
+learning_rate: 0.1
+discount: 0.95
+episodes: 20000
+discrete_size: 40
+epsilon_start: 1.0
+start_epsilon_decay: 0
+end_epsilon_decay: 5000
+qtable_init_low: -3
+qtable_init_high: 0
+stats_every: 1000
+show_every: 1000

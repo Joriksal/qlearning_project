@@ -1,0 +1,18 @@
+# Ignorar carpetas de salidas y entornos
+plots/
+qtable_charts/
+qtables/
+videos/
+venv_mountaincar/
+
+# Archivos temporales y de entorno
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.env
+
+# Archivos de configuración del sistema
+.DS_Store
+Thumbs.db

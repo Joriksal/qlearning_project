@@ -1,0 +1,7 @@
+gym==0.25.2
+numpy==1.23.5
+matplotlib==3.7.1
+pyyaml==6.0
+pygame
+gym[classic_control]
+opencv-python
